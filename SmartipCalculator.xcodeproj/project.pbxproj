@@ -59,7 +59,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		AB08FCF423A39C83007FE006 /* JSONModel */ = {
+		AB08FCF423A39C83007FE006 /* OpenCageDataJSONModel */ = {
 			isa = PBXGroup;
 			children = (
 				AB08FCF523A39C83007FE006 /* Geometry.swift */,
@@ -75,7 +75,7 @@
 				AB08FCFF23A39C83007FE006 /* Southwest.swift */,
 				AB08FD0023A39C83007FE006 /* Components.swift */,
 			);
-			path = JSONModel;
+			path = OpenCageDataJSONModel;
 			sourceTree = "<group>";
 		};
 		ABC96ADA23A0F8DC00CFB1A5 = {
@@ -97,7 +97,7 @@
 		ABC96AE523A0F8DC00CFB1A5 /* SmartipCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				AB08FCF423A39C83007FE006 /* JSONModel */,
+				AB08FCF423A39C83007FE006 /* OpenCageDataJSONModel */,
 				ABC96AE623A0F8DC00CFB1A5 /* AppDelegate.swift */,
 				ABC96AE823A0F8DC00CFB1A5 /* SceneDelegate.swift */,
 				ABC96AEA23A0F8DC00CFB1A5 /* ViewController.swift */,

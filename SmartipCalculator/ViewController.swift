@@ -11,7 +11,11 @@ import CoreLocation
 
 class ViewController: UIViewController, CLLocationManagerDelegate {
     
-    // MARK: - Variables
+    // MARK: - Variables/IBOutlets
+    
+    // MARK: Static constants
+    static let OPEN_CAGE_DATA_BASE_URL = "https://api.opencagedata.com/geocode/v1/json"
+    static let OPEN_CAGE_DATA_API_KEY = "22f8a3a871864fca9c7f1f75655907ba"
     
     // MARK: IBOutlets
     @IBOutlet weak var countryLabel: UILabel!
@@ -59,7 +63,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     
     // MARK: Helper methods
     func updateCountry() {
-        let url = URL(string: "https://api.opencagedata.com/geocode/v1/json?q=\(coordinates!.lat),\(coordinates!.long)&pretty=1&key=22f8a3a871864fca9c7f1f75655907ba")
+        let url = URL(string: "\(ViewController.OPEN_CAGE_DATA_BASE_URL)?q=\(coordinates!.lat),\(coordinates!.long)&pretty=1&key=22f8a3a871864fca9c7f1f75655907ba")
         
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             guard let data = data else {
@@ -68,17 +72,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             }
             
             do {
-                
                 let responseModel = try JSONDecoder().decode(Json4Swift_Base.self, from: data)
                 print(responseModel.results![0].components!)
                 
                 self.country = responseModel.results![0].components!.country!
-                
             } catch {
                 print("JSONSerialization error:", error)
             }
         }
-        
         task.resume()
     }
 
