@@ -19,6 +19,7 @@
 		AB08FD0A23A39C83007FE006 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB08FCFE23A39C83007FE006 /* Status.swift */; };
 		AB08FD0B23A39C83007FE006 /* Southwest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB08FCFF23A39C83007FE006 /* Southwest.swift */; };
 		AB08FD0C23A39C83007FE006 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB08FD0023A39C83007FE006 /* Components.swift */; };
+		ABC04B5923A532F900B66DFB /* NumberButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC04B5823A532F900B66DFB /* NumberButton.swift */; };
 		ABC96AE723A0F8DC00CFB1A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC96AE623A0F8DC00CFB1A5 /* AppDelegate.swift */; };
 		ABC96AE923A0F8DC00CFB1A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC96AE823A0F8DC00CFB1A5 /* SceneDelegate.swift */; };
 		ABC96AEB23A0F8DC00CFB1A5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC96AEA23A0F8DC00CFB1A5 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 		AB08FCFE23A39C83007FE006 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		AB08FCFF23A39C83007FE006 /* Southwest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Southwest.swift; sourceTree = "<group>"; };
 		AB08FD0023A39C83007FE006 /* Components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		ABC04B5823A532F900B66DFB /* NumberButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberButton.swift; sourceTree = "<group>"; };
 		ABC96AE323A0F8DC00CFB1A5 /* SmartipCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartipCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC96AE623A0F8DC00CFB1A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABC96AE823A0F8DC00CFB1A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				ABC96AEC23A0F8DC00CFB1A5 /* Main.storyboard */,
 				ABC96AEF23A0F8F000CFB1A5 /* LaunchScreen.storyboard */,
 				ABC96AF223A0F8F000CFB1A5 /* Info.plist */,
+				ABC04B5823A532F900B66DFB /* NumberButton.swift */,
 			);
 			path = SmartipCalculator;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			files = (
 				ABC96AEB23A0F8DC00CFB1A5 /* ViewController.swift in Sources */,
 				AB08FD0223A39C83007FE006 /* Bounds.swift in Sources */,
+				ABC04B5923A532F900B66DFB /* NumberButton.swift in Sources */,
 				AB08FD0B23A39C83007FE006 /* Southwest.swift in Sources */,
 				AB08FD0523A39C83007FE006 /* Results.swift in Sources */,
 				AB08FD0923A39C83007FE006 /* Licenses.swift in Sources */,
@@ -339,6 +343,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6MA2KXXMWD;
 				INFOPLIST_FILE = SmartipCalculator/info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -357,6 +362,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6MA2KXXMWD;
 				INFOPLIST_FILE = SmartipCalculator/info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
